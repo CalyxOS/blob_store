@@ -10,7 +10,7 @@ const bs = await new BlobStore()
 
 bs.has('keyname')
 bs.get('keyname')
-bs.remove('keyname')
+bs.delete('keyname')
 bs.add('keyname', blob)
 const onProgress = x => console.log(`${onProgress * 100}% downloaded`)
 bs.fetch('keyname', 'https://url', onProgress)

@@ -47,7 +47,7 @@ export default class BlobStore {
       .then(async (response) => {
         if (!response.headers.get("content-length")) {
           throw new Error(
-            "response for ${url} is missing content-length header",
+            `response for ${url} is missing content-length header`,
           );
         }
 
